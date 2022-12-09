@@ -1,5 +1,19 @@
-# 学习笔记
+# gitee-study
 
-个人学习笔记
+## Project setup
+```
+pnpm install
+```
 
-切换不同分之查看
+### Compiles and hot-reloads for development
+```
+pnpm run serve
+```
+
+### Compiles and minifies for production
+```
+pnpm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

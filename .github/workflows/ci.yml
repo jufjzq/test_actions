@@ -2,13 +2,13 @@ name: Build and Deploy
 on: # 监听 main 分支上的 push 事件
   push:
     branches:
-      - main
+      - vue/vue-fit
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # 构建环境使用 ubuntu
     steps:
       - name: Checkout  # 将代码拉到虚拟机
-        uses: actions/checkout@v2.3.1  
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -18,7 +18,7 @@ jobs:
           npm run build
 
       - name: Deploy 🚀 # 部署
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: static-pages # 部署后提交到的分支
+          branch: master:gh-pages # 部署后提交到的分支
           folder: dist # 这里填打包好的目录名称

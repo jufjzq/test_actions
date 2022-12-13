@@ -1,0 +1,1 @@
+body,html{margin:0;padding:0}#app,body,html{width:100%;height:100%;overflow:hidden}#app{position:relative;display:grid;grid-template-columns:250px 1fr 250px;grid-template-rows:50px 1fr;grid-column-gap:20px}header{background:gray;grid-area:1/1/2/4}aside{background-color:gold}aside.left{grid-area:2/1/3/2}main{grid-area:2/2/3/3;background-color:#000}aside.right{grid-area:2/3/3/4}
